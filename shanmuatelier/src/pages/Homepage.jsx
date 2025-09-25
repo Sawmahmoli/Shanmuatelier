@@ -16,24 +16,24 @@ import 'aos/dist/aos.css';
 
 // IMAGES
 import logo from "/shanmu-logo.png"
-import asa from "/images/visit/woodcraft_visit3.jpg"
-import vst1 from "/images/visit/woodcraft_visit7.jpg"
-import vst2 from "/images/visit/woodcraft_visit2.jpg"
-import vst3 from "/images/visit/woodcraft_visit4.jpg"
-import vst4 from "/images/visit/woodcraft_visit6.jpg"
-import vst5 from "/images/visit/woodcraft_visit8.jpg"
-import varrow from "/images/left-arrow.svg"
-import hero from "/images/visit/woodcraft_visit9.jpg"
+import asa from "../assets/images/visit/woodcraft_visit3.jpg"
+import vst1 from "../assets/images/visit/woodcraft_visit7.jpg"
+import vst2 from "../assets/images/visit/woodcraft_visit2.jpg"
+import vst3 from "../assets/images/visit/woodcraft_visit4.jpg"
+import vst4 from "../assets/images/visit/woodcraft_visit6.jpg"
+import vst5 from "../assets/images/visit/woodcraft_visit8.jpg"
+import varrow from "../assets/images/left-arrow.svg"
+import hero from "../assets/images/visit/woodcraft_visit9.jpg"
 
 // components
 import Works from "./Works.jsx";
 import Reservation from "../components/Reservation.jsx"
 
 // SWIPER
-import sw1 from "/images/works/works_livingroom.01-1.png"
-import sw2 from "/images/works/works_cabinet.05-1.png"
-import sw3 from "/images/works/works_chair.03-1.png"
-import sw4 from "/images/visit/woodcraft_visit1.jpg"
+import sw1 from "../assets/images/works/works_livingroom.01-1.png"
+import sw2 from "../assets/images/works/works_cabinet.05-1.png"
+import sw3 from "../assets/images/works/works_chair.03-1.png"
+import sw4 from "../assets/images/visit/woodcraft_visit1.jpg"
 
 // SASS
 import "../sass/homepage.scss"

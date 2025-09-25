@@ -5,10 +5,10 @@ import { useParams, Link } from "react-router-dom";
 
 
 // IMAGES
-import lArrow from "/images/left-arrow.svg"
-import img1 from "/images/works/works_desk.01-1.png"
-import img2 from "/images/works/works_desk.01-2.png"
-import img3 from "/images/works/works_desk.01-3.png"
+import lArrow from "../assets/images/left-arrow.svg"
+import img1 from "../assets/images/works/works_desk.01-1.png"
+import img2 from "../assets/images/works/works_desk.01-2.png"
+import img3 from "../assets/images/works/works_desk.01-3.png"
 
 
 

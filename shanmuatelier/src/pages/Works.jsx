@@ -11,13 +11,12 @@ import 'swiper/css/pagination';
 import { FreeMode, Mousewheel } from 'swiper/modules';
 
 // IMAGES
-import wArrow from "/images/works-arrow.svg"
-import wSwp1 from "/images/works/works_cabinet.03-1.png"
-import wSwp2 from "/images/works/works_cabinet.02-2.png"
-import wSwp3 from "/images/works/works_desk.01-1.png"
-import wSwp4 from "/images/works/works_chair.02-1.png"
-import wSwp5 from "/images/works/works_cabinet.05-1.png"
-import WorkDetail from './WorkDetail';
+import wArrow from "../assets/images/works-arrow.svg"
+import wSwp1 from "../assets/images/works/works_cabinet.03-1.png"
+import wSwp2 from "../assets/images/works/works_cabinet.02-2.png"
+import wSwp3 from "../assets/images/works/works_desk.01-1.png"
+import wSwp4 from "../assets/images/works/works_chair.02-1.png"
+import wSwp5 from "../assets/images/works/works_cabinet.05-1.png"
 
 // SASS
 import "../sass/works.scss"
