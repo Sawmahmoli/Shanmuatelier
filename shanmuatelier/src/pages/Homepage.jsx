@@ -16,6 +16,7 @@ import 'aos/dist/aos.css';
 
 // IMAGES
 import logo from "../assets/shanmu-logo.png"
+import herrow from "../assets/images/hero-arrow.svg"
 import asa from "../assets/images/visit/woodcraft_visit3.jpg"
 import vst1 from "../assets/images/visit/woodcraft_visit7.jpg"
 import vst2 from "../assets/images/visit/woodcraft_visit2.jpg"
@@ -207,6 +208,8 @@ export default function Homepage() {
 
       {/* HERO */}
       < section className="hero" >
+
+      <img className="scroll" src={herrow} alt="下滑" />
 
         {/* logo */}
         <figure className="logo">

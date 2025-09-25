@@ -52,6 +52,13 @@
     position: relative;
     height: 130vh;
 
+    .scroll{
+        position: absolute;
+        z-index: 4;
+        top: 100px;
+        right: 30vh;
+        width: 30px;
+    }
 
     .swiper-wrap {
         margin-top: 20vh;
