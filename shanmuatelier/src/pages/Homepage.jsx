@@ -29,10 +29,10 @@ import Works from "./Works.jsx";
 import Reservation from "../components/Reservation.jsx"
 
 // SWIPER
-import sw1 from "../assets/images/works/works_livingroom.01-1.png"
-import sw2 from "../assets/images/works/works_cabinet.05-1.png"
-import sw3 from "../assets/images/works/works_chair.03-1.png"
-import sw4 from "../assets/images/works/works_cabinet.06-1.png"
+import sw1 from "../assets/images/works/works_livingroom.01-1.jpg"
+import sw2 from "../assets/images/works/works_cabinet.05-1.jpg"
+import sw3 from "../assets/images/works/works_chair.03-1.jpg"
+import sw4 from "../assets/images/works/works_cabinet.06-1.jpg"
 
 // SASS
 import "../sass/homepage.scss"

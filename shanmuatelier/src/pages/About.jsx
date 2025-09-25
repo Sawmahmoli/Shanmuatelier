@@ -5,8 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // IMAGES
-import abL1 from "../assets/images/works/works_cabinet.04-2.png"
-import abL2 from "../assets/images/works/works_cabinet.02-1.png"
+import abL1 from "../assets/images/works/works_cabinet.04-2.jpg"
+import abL2 from "../assets/images/works/works_cabinet.02-1.jpg"
 import abR1 from "../assets/images/visit/woodcraft_visit4.jpg"
 import abR2 from "../assets/images/visit/woodcraft_visit3.jpg"
 
@@ -77,7 +77,7 @@ const About = () => {
               allowFullScreen
             ></iframe>
           </div>
-          
+
           <div className="block2"
             data-aos="fade-up"
             data-aos-delay="400"
