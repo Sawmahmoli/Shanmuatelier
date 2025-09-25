@@ -15,7 +15,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // IMAGES
-import logo from "/shanmu-logo.png"
+import logo from "../assets/shanmu-logo.png"
 import asa from "../assets/images/visit/woodcraft_visit3.jpg"
 import vst1 from "../assets/images/visit/woodcraft_visit7.jpg"
 import vst2 from "../assets/images/visit/woodcraft_visit2.jpg"
