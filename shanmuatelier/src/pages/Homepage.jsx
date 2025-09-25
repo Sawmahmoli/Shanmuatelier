@@ -23,7 +23,6 @@ import vst3 from "../assets/images/visit/woodcraft_visit4.jpg"
 import vst4 from "../assets/images/visit/woodcraft_visit6.jpg"
 import vst5 from "../assets/images/visit/woodcraft_visit8.jpg"
 import varrow from "../assets/images/left-arrow.svg"
-import hero from "../assets/images/visit/woodcraft_visit9.jpg"
 
 // components
 import Works from "./Works.jsx";
@@ -33,7 +32,7 @@ import Reservation from "../components/Reservation.jsx"
 import sw1 from "../assets/images/works/works_livingroom.01-1.png"
 import sw2 from "../assets/images/works/works_cabinet.05-1.png"
 import sw3 from "../assets/images/works/works_chair.03-1.png"
-import sw4 from "../assets/images/visit/woodcraft_visit1.jpg"
+import sw4 from "../assets/images/works/works_cabinet.06-1.png"
 
 // SASS
 import "../sass/homepage.scss"

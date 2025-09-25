@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react'
 
-// IMAGES
-// import {bg} from "/images/visit/woodcraft_visit1.jpg"
-
 // SASS
 import "../sass/visit.scss"
 

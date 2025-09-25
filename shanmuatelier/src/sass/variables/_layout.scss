@@ -71,8 +71,6 @@
 
         // NAV
         .menu {
-            // display: none;
-
             opacity: 0;
             transform: translateX(100%);
 
@@ -104,13 +102,13 @@
 
     // RESERVATION
     .reserve-btn {
-        border: none;
         position: fixed;
-        z-index: 1;
+        z-index: 3;
         bottom: 100px;
         right: 0;
         background-color: transparent;
         border: 1px solid $sage;
+        border-right:none;
 
         .reservation {
             display: flex;
@@ -149,7 +147,7 @@
         background-color: $ash;
         padding: 10% 0 0 10%;
         position: relative;
-        z-index: 5;
+        z-index: 4;
 
         .footer-wrap {
             display: flex;
