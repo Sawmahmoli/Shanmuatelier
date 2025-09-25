@@ -94,6 +94,32 @@
                 a {
                     color: $cream;
                     font-size: $f-s-md;
+                    position: relative;
+                    width: fit-content;
+                    background-color: transparent;
+                    border: 0;
+                    box-sizing: border-box;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        margin: 2px 0;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        height: 1.5px;
+                        width: 100%;
+                        background-color: $cream;
+                        transition: transform .6s cubic-bezier(.55, 0, .1, 1);
+                    }
+
+                    &:hover {
+                        &:after {
+                            transform: scaleX(1);
+                            transform-origin: left;
+                            transition: transform .6s cubic-bezier(.55, 0, .1, 1);
+                        }
+                    }
+
                 }
             }
         }
@@ -172,13 +198,13 @@
             }
 
             .info {
-                text-wrap: nowrap;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 padding-top: 10%;
 
                 h5 {
+                    text-wrap: nowrap;
                     font-family: $family-tc;
                     font-size: $f-s-lg;
                     font-weight: $f-w-l;
@@ -238,8 +264,8 @@
             padding-bottom: 10%;
 
             .top-btn {
-                top:10%;
-                left:10%;
+                top: 10%;
+                left: 10%;
                 height: 20%;
             }
         }

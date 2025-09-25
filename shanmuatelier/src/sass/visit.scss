@@ -195,6 +195,7 @@
 
     @media(max-width:768px) {
         height: 220vh;
+        
 
         .viewport {
 
@@ -208,6 +209,7 @@
 
 
             .visit-wrap {
+        width: fit-content;
                 margin: 25vh 0;
                 --base: 0;
                 transform: translateY(var(--base));
