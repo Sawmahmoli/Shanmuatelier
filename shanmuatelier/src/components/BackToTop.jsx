@@ -1,6 +1,6 @@
 import React from 'react'
 // IMAGES
-import fArrow from "/images/footer-arrow.svg"
+import fArrow from "../assets/images/footer-arrow.svg"
 
 const backToTop = () => {
 
