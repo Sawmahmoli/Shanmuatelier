@@ -16,6 +16,23 @@
 
     }
 
+    .prompt {
+        display: flex;
+        align-items:center;
+        gap: 15px;
+        margin: 0 0 10px 15%;
+        p {
+            font-family: $family-tc;
+            font-weight: $f-w-r;
+            font-size: $f-s-xs;
+            color: $sage;
+        }
+        img {
+            display: block;
+            width: 20px;
+        }
+    }
+
     .swiper {
         height: fit-content;
         width: 85%;

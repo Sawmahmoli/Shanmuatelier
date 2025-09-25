@@ -17,6 +17,10 @@ import wSwp2 from "../assets/images/works/works_cabinet.02-2.jpg"
 import wSwp3 from "../assets/images/works/works_desk.01-1.jpg"
 import wSwp4 from "../assets/images/works/works_chair.02-1.jpg"
 import wSwp5 from "../assets/images/works/works_cabinet.05-1.jpg"
+import wSwp6 from "../assets/images/works/works_cabinet.06-1.jpg"
+import wSwp7 from "../assets/images/works/works_-bedstead.01-1.jpg"
+
+import rarrow from "../assets/images/gr-arrow.svg"
 
 // SASS
 import "../sass/works.scss"
@@ -67,6 +71,11 @@ const Works = () => {
           <h3>Works</h3>
         </header>
 
+        <div className="prompt">
+          <p>滾動滑鼠．左右瀏覽</p>
+          <span><img src={rarrow} alt="" /></span>
+          </div>
+
         {/* Swiper */}
         <Swiper
           slidesPerView={'auto'}
@@ -88,9 +97,9 @@ const Works = () => {
                 </div>
                 <div className="work-sum">
                   <div className="content">
-                    <div className="work-name">椅凳</div>
+                    <div className="work-name">山波系列｜藤編電視櫃</div>
                     <div className="work-mfg">
-                      <div>2022</div>
+                      <div>2017</div>
                       <div className="work-arrow">
                         <img src={wArrow} alt="" />
                       </div>
@@ -109,7 +118,7 @@ const Works = () => {
               </div>
               <div className="work-sum">
                 <div className="content">
-                  <div className="work-name">椅凳</div>
+                  <div className="work-name">謐系列｜五斗櫃</div>
                   <div className="work-mfg">
                     <div>2022</div>
                     <div className="work-arrow">
@@ -129,9 +138,9 @@ const Works = () => {
               </div>
               <div className="work-sum">
                 <div className="content">
-                  <div className="work-name">椅凳</div>
+                  <div className="work-name">侘寂系列｜實木書桌</div>
                   <div className="work-mfg">
-                    <div>2022</div>
+                    <div>2023</div>
                     <div className="work-arrow">
                       <img src={wArrow} alt="" />
                     </div>
@@ -149,7 +158,7 @@ const Works = () => {
               </div>
               <div className="work-sum">
                 <div className="content">
-                  <div className="work-name">椅凳</div>
+                  <div className="work-name">山行系列｜藤編扶手椅</div>
                   <div className="work-mfg">
                     <div>2022</div>
                     <div className="work-arrow">
@@ -165,13 +174,13 @@ const Works = () => {
           <SwiperSlide><Link className="swiper-slide" href="#">
             <div className="work-contents">
               <div className="work-image">
-                <img src={wSwp2} alt="" loading="lazy" />
+                <img src={wSwp5} alt="" loading="lazy" />
               </div>
               <div className="work-sum">
                 <div className="content">
-                  <div className="work-name">椅凳</div>
+                  <div className="work-name">山行系列｜藤編收納櫃</div>
                   <div className="work-mfg">
-                    <div>2022</div>
+                    <div>2024</div>
                     <div className="work-arrow">
                       <img src={wArrow} alt="" />
                     </div>
@@ -185,13 +194,13 @@ const Works = () => {
           <SwiperSlide><Link className="swiper-slide" to="/WorkDetail">
             <div className="work-contents">
               <div className="work-image">
-                <img src={wSwp3} alt="" loading="lazy" />
+                <img src={wSwp6} alt="" loading="lazy" />
               </div>
               <div className="work-sum">
                 <div className="content">
-                  <div className="work-name">椅凳</div>
+                  <div className="work-name">山波系列｜掛壁電視櫃</div>
                   <div className="work-mfg">
-                    <div>2022</div>
+                    <div>2019</div>
                     <div className="work-arrow">
                       <img src={wArrow} alt="" />
                     </div>
@@ -205,13 +214,13 @@ const Works = () => {
           <SwiperSlide slot="wrapper-end"><Link className="swiper-slide" to="/WorkDetail">
             <div className="work-contents">
               <div className="work-image">
-                <img src={wSwp5} alt="" loading="lazy" />
+                <img src={wSwp7} alt="" loading="lazy" />
               </div>
               <div className="work-sum">
                 <div className="content">
-                  <div className="work-name">椅凳</div>
+                  <div className="work-name">山行系列｜藤編床頭櫃</div>
                   <div className="work-mfg">
-                    <div>2022</div>
+                    <div>2024</div>
                     <div className="work-arrow">
                       <img src={wArrow} alt="" />
                     </div>

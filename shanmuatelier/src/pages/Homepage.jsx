@@ -22,6 +22,7 @@ import vst2 from "../assets/images/visit/woodcraft_visit2.jpg"
 import vst3 from "../assets/images/visit/woodcraft_visit4.jpg"
 import vst4 from "../assets/images/visit/woodcraft_visit6.jpg"
 import vst5 from "../assets/images/visit/woodcraft_visit8.jpg"
+import rarrow from "../assets/images/gr-arrow.svg"
 import varrow from "../assets/images/left-arrow.svg"
 
 // components
@@ -203,19 +204,21 @@ export default function Homepage() {
 
   return (
     <>
-      {/* logo */}
-      <figure className="logo">
-         <Link to="/">
-        <img src={logo} alt="山木工所Logo" />
-        {/* <figcaption>Shanmu Atelier</figcaption> */}
-        </Link>
-      </figure>
 
       {/* HERO */}
       < section className="hero" >
 
+        {/* logo */}
+        <figure className="logo">
+          <img src={logo} alt="山木工所Logo" />
+          <figcaption>
+            <h1>山木工所</h1>
+            <p>Shanmu Atelier</p>
+          </figcaption>
+        </figure>
+
+        {/* SWIPER */}
         <div className="swiper-wrap">
-          {/* <img src={hero} alt="" /> */}
           <Swiper
             centeredSlides={true}
             effect={'fade'}
@@ -253,14 +256,23 @@ export default function Homepage() {
           <p>我們的工藝師，並非只是製作者，更是故事的編織者。他們在木材的紋路中，看見四季的更迭，在雕刻與打磨的節奏中，融入了屬於自己的生活經歷與情感。當你觸碰一張桌、一把椅，你觸碰的不只是家具，更是工藝師的記憶與心意。每件作品的獨特之處，不只是外觀設計，而是背後那份真誠與細膩。
           </p>
         </div>
-        <div className="about-img"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="700">
-          <img src={asa} alt="" />
 
-        </div>
-        <div className="bg"></div>
+        <Link to="/about" className="about-img">
+          <img src={asa} alt="關於山木工所"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="700" />
+
+          <div className="abt-btn"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="700">
+            <p>探索品牌理念・認識工藝師</p>
+            <span><img src={rarrow} alt="認識工藝師" /></span>
+          </div>
+        </Link>
+
+        <div className="abg"></div>
       </section>
 
       {/* WORKS */}

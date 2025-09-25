@@ -159,7 +159,6 @@
                     gap: 8px;
                 }
 
-                a {}
 
                 .btn-animation {
                     // 按鈕原生樣式
@@ -188,6 +187,33 @@
                         color: $white;
                     }
                 }
+
+            }
+        }
+
+    }
+
+    @media(max-width:768px) {
+        height: 220vh;
+
+        .viewport {
+
+            height: 220vh;
+            position: absolute;
+
+            .bg {
+                --base: 0;
+                --distance: 0;
+            }
+
+
+            .visit-wrap {
+                margin: 25vh 0;
+                --base: 0;
+                transform: translateY(var(--base));
+
+                animation: none;
+                will-change: transform;
 
             }
         }

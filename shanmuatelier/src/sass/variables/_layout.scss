@@ -71,7 +71,7 @@
         // NAV
         .menu {
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateX(1000%);
 
             &.show {
                 display: flex;
@@ -107,7 +107,7 @@
         right: 0;
         background-color: transparent;
         border: 1px solid $sage;
-        border-right:none;
+        border-right: none;
 
         .reservation {
             display: flex;
@@ -144,7 +144,7 @@
     #footer {
         color: $white;
         background-color: $ash;
-        padding: 10% 0 0 10%;
+        padding: 10% 10% 0 10%;
         position: relative;
         z-index: 4;
 
@@ -153,6 +153,7 @@
             flex-direction: column;
 
             .title {
+                text-wrap: nowrap;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -171,6 +172,7 @@
             }
 
             .info {
+                text-wrap: nowrap;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -226,6 +228,20 @@
             height: 30%;
             width: fit-content;
             cursor: pointer;
+        }
+
+        @media(max-width:576px) {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-bottom: 10%;
+
+            .top-btn {
+                top:10%;
+                left:10%;
+                height: 20%;
+            }
         }
     }
 }

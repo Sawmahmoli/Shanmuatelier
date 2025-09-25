@@ -5,7 +5,7 @@ import { useParams, Link } from "react-router-dom";
 
 
 // IMAGES
-import lArrow from "../assets/images/left-arrow.svg"
+import glarrow from "../assets/images/gl-arrow.svg"
 import img1 from "../assets/images/works/works_desk.01-1.jpg"
 import img2 from "../assets/images/works/works_desk.01-2.jpg"
 import img3 from "../assets/images/works/works_desk.01-3.jpg"
@@ -40,34 +40,37 @@ const WorkDetail = () => {
 
           {/* 作品說明 */}
           <div className="text-box">
-            <h3>山波系列｜掛壁電視櫃</h3>
+            <h3>侘寂系列｜實木椅凳</h3>
             <time className="year">2025</time>
 
             <div className="detail-desc">
-              <p>以「自然共存」為核心，將大地山川的流動曲線轉化為木紋雕刻，
-                這不僅是收納物件，更像是一件能呼吸的藝術品。
-                壁掛的輕盈結構，讓生活空間維持開闊，象徵人與自然的和諧共生。
+              <p>此木椅凳以「日常的溫度」為出發點，強調簡潔與實用。
+                圓潤造型帶來溫潤觸感，既是能獨立存在成為一件簡單的家具，
+                也能融入不同空間氛圍，成為陪伴生活的溫柔支點。
               </p>
             </div>
 
             <div className="detail-specs">
               <div className="size">
                 <h4>尺寸</h4>
-                <p>W 120×D 35×H 30</p>
+                <p>W40 × D30 × H45</p>
               </div>
 
               <div className="material">
                 <h4>材質</h4>
-                <p>天然橡木實木</p>
+                <p>胡桃木實木 + 天然木蠟油</p>
               </div>
 
               <div className="custom">
                 <h4>商品訂製</h4>
-                <p>商品無現貨時接單製作</p>
+                <p>商品無現貨時可接單製作</p>
               </div>
             </div>
 
-            <Link to="/works" className="back"><img src={lArrow} alt="" /></Link>
+            <Link to="/works" className="back">
+            <img src={glarrow} alt="" />
+            <p>回上一頁</p>
+            </Link>
 
           </div>
         </div>
