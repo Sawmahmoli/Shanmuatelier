@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // IMAGES
-import abL1 from "/images/works/works_cabinet.04-2.png"
+import abL1 from "../assets/works/works_cabinet.04-2.png"
 import abL2 from "/images/works/works_cabinet.02-1.png"
 import abR1 from "/images/visit/woodcraft_visit4.jpg"
 import abR2 from "/images/visit/woodcraft_visit3.jpg"
