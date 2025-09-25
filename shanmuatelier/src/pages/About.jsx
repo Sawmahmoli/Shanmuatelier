@@ -62,16 +62,8 @@ const About = () => {
           <img className="img2" src={abL2} alt=""
             data-aos="fade-up"
             data-aos-duration="1000" />
-          <div className="block2"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1000">
-            <h4>從工坊到你身邊</h4>
-            <p>你會看見的不只是商品，而是一場視覺與情感的旅程。我們希望每一次的瀏覽，都是一次與工藝師靈魂對話的機會；每一次的選擇，都是一次對自然共存理念的支持與延續。這不僅是購買家具，而是為生活添上一份詩意與溫度。
-            </p>
-          </div>
 
-          <div className='iframe'
+            <div className='iframe'
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"
@@ -85,6 +77,17 @@ const About = () => {
               allowFullScreen
             ></iframe>
           </div>
+          
+          <div className="block2"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000">
+            <h4>從工坊到你身邊</h4>
+            <p>你會看見的不只是商品，而是一場視覺與情感的旅程。我們希望每一次的瀏覽，都是一次與工藝師靈魂對話的機會；每一次的選擇，都是一次對自然共存理念的支持與延續。這不僅是購買家具，而是為生活添上一份詩意與溫度。
+            </p>
+          </div>
+
+          
 
         </div>
 

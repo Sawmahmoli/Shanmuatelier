@@ -207,7 +207,7 @@ export default function Homepage() {
       <figure className="logo">
          <Link to="/">
         <img src={logo} alt="山木工所Logo" />
-        <figcaption>Shanmu Atelier</figcaption>
+        {/* <figcaption>Shanmu Atelier</figcaption> */}
         </Link>
       </figure>
 
