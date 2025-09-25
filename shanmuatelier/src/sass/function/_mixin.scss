@@ -1,0 +1,24 @@
+@use '../variables/' as *;
+
+@mixin border-bottom($width: 1px, $color: $ash) {
+    border-bottom: solid $width $color;
+}
+
+@mixin bordered($width: 1px, $color: $ash) {
+    border: solid $width $color;
+}
+
+@mixin animation($name, $speed: 0.7s) {
+    animation: $name $speed ease-in-out both;
+}
+
+@mixin glassmorphism {
+    background-image: linear-gradient(to bottom right, $alpha-w-10, $alpha-w-40);
+    @include bordered($width: 2px, $color: $alpha-w-40);
+    // 背景濾鏡：此效果「有可能」需加上瀏覽器前綴詞 -webkit 
+    backdrop-filter: blur(10px);
+    // 容器陰影：只針對元素本身，不套用子元素
+    box-shadow: 2px 4px 10px $alpha-w-20,
+    inset -1px -1px 1px $alpha-w-40;
+
+}

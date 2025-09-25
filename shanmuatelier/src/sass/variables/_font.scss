@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Serif+TC:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+// font-family
+$family-display: "Noto Serif TC";
+$family-tc:"Noto Sanc TC";
+$family-en: "Figtree", sans-serif;
+
+// font-size
+$f-s-xxs: 0.75rem; // 12px
+$f-s-xs: 0.875rem; // 14px
+$f-s-sm: 1rem; // 16px
+$f-s-md: 1.25rem; // 20px
+$f-s-lg: 1.5rem; // 24px
+$f-s-xl: 2rem; // 32px
+$f-s-xxl: 2.25rem; // 36px
+$f-s-ex: 3.375rem; // 54px
+
+// font-weight
+$f-w-l: 300;
+$f-w-r: 400;
+$f-w-m: 600;
+$f-w-b: 700;
+
+// TITLE-段落標題
+
+h2 {
+    font-family: $family-display;
+    font-size: $f-s-ex;
+    font-weight: $f-w-r;
+
+}
+
+h3 {
+    font-family: $family-en;
+    font-size: $f-s-xl;
+    font-weight: $f-w-l;
+}
+
+h4 {
+    font-family: $family-display;
+    font-size: $f-s-md;
+    font-weight: $f-w-r;
+}
+
+// header {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 10vh 15vw;
+
+// }

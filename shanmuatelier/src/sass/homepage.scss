@@ -1,0 +1,251 @@
+@use 'reset'; // @use須在任何其他規則之前寫入
+@use 'variables' as *;
+@use 'function' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Quicksand:wght@300..700&display=swap');
+
+
+// LOGO
+.logo {
+    position: fixed;
+    z-index: 1;
+    margin: 5vh 5vw;
+    top: 0;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+
+        img {
+            display: block;
+            width: 48px;
+        }
+
+        figcaption {
+            font-family: $family-en;
+            font-size: $f-s-md;
+            text-wrap: nowrap;
+        }
+    }
+}
+
+// HERO
+.hero {
+    position: relative;
+    height: 130vh;
+
+
+    .swiper-wrap {
+        margin-top: 20vh;
+        width: 85vw;
+        height: 85vh;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mySwiper {
+            height: 100%;
+            width: 100%;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+
+}
+
+.bg {
+    background-color: #F7F7EE;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+}
+
+// ABOUT
+#home-about {
+    position: relative;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 15vw 1fr 1fr 15vw;
+    grid-template-rows: 2fr 3fr;
+    margin-bottom: 20vh;
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+        grid-column: 2 / 4;
+        text-wrap: nowrap;
+    }
+
+    .bg {
+        position: absolute;
+        z-index: -2;
+        height: 80%;
+    }
+
+    .text-box {
+        padding-right: 10vh;
+        grid-column: 2 / 3;
+        height: fit-content;
+        width: 100%;
+
+
+    }
+
+    .about-img {
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+        margin-top: 15vh;
+        grid-column: 3 / 4;
+
+    }
+
+    @media (max-width:768px) {
+
+        .text-box {
+            padding-right: 0;
+            margin-top: 5vh;
+            grid-column: 2 / 4;
+        }
+
+        .about-img {
+            margin-top: 5vh;
+            grid-column: 2 / 4;
+
+        }
+
+    }
+
+}
+
+// VISIT
+#homeVisit {
+    position: relative;
+    height: 240vh;
+    overflow: hidden;
+
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        height: 200%;
+        width: 100%;
+        --base: 0;
+        --distance: -70vh;
+        animation: parallax 1s linear both;
+        animation-timeline: scroll(y root);
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $black;
+
+            img {
+                width: 100px;
+                transform: rotate(-90deg);
+                margin-top: 60px;
+            }
+        }
+    }
+
+
+
+
+
+    .image-box {
+        position: sticky;
+        top: -50vh;
+        margin-top: 50vh;
+        background-color: #D7E1E3;
+        z-index: 1;
+        height: 100%;
+
+        .img {
+            position: sticky;
+            left: 0;
+            top: 0;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            will-change: transform, opacity;
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.1s linear;
+
+            }
+        }
+
+        .img1 {
+            position: absolute;
+            top: -30vh;
+            left: 20vw;
+            overflow: visible;
+            z-index: 5;
+
+        }
+
+        .img2 {
+            position: absolute;
+            top: 15vh;
+            left: 70vw;
+            z-index: 6;
+
+        }
+
+        .img3 {
+            position: absolute;
+            top: 40vh;
+            left: -10vw;
+            z-index: 7;
+
+        }
+
+        .img4 {
+            position: absolute;
+            top: 110vh;
+            left: 30vw;
+            z-index: 8;
+
+        }
+
+        .img5 {
+            position: absolute;
+            top: 90vh;
+            left: 85vw;
+            z-index: 9;
+
+        }
+
+    }
+}

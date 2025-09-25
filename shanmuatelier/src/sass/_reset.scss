@@ -1,0 +1,144 @@
+// CSS Reset //
+* {
+    box-sizing: border-box;
+    // 不累加內距及邊框 //
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 400;
+
+}
+
+// 重置字體 //
+body {
+    // 有兩個英文單字組成（含空格）、中文字體名稱需要加上「""」 //
+    // 也可以全部都給「""」
+    font-family:
+        // 英文 //
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        // 中文 //
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    ;
+    line-height: 1.75;
+    height: 100%;
+}
+
+// 重置標題 //
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+// 重置列表 //
+ul,
+ol {
+    list-style: none;
+}
+
+// 重置圖片 //
+img {
+    display: block;
+    width: 100%;
+}
+
+// 重置連接 //
+a {
+    display: block;
+    // <a> 常用來設定尺寸，所以直接修改為block //
+    // inline不支援尺寸設定 //
+    color: #777;
+    text-decoration: none;
+    // 取消預設底線 //
+    // 設定元素本身//
+    // 設定hover或秒數未滿，滑鼠無法顯示動畫 //
+    transition: 0.4s;
+}
+
+/* reset end */

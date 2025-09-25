@@ -1,0 +1,123 @@
+@use 'reset'; // @use須在任何其他規則之前寫入
+@use 'variables' as *;
+@use 'function' as *;
+
+
+// WORKS
+#works {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 10vh 15vw;
+
+    }
+
+    .swiper {
+        height: fit-content;
+        width: 85%;
+        margin-left: 15%;
+        overflow: hidden;
+
+        .swiper-wrapper {
+            width: 100%;
+
+            .swiper-slide {
+                display: flex;
+                gap: 30px;
+                width: fit-content !important;
+
+                .work-contents {
+                    display: flex;
+                    position: relative;
+                    height: 300px;
+
+                    .work-image {
+                        height: 100%;
+                        width: fit-content;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+
+                        img {
+                            width: auto;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+
+                    .work-sum {
+                        opacity: 0;
+                        position: absolute;
+                        z-index: 98;
+                        width: 100%;
+                        height: fit-content;
+                        top: 50%;
+                        overflow: hidden;
+
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            position: relative;
+                            position: relative;
+                            z-index: 99;
+                            padding: 20px;
+
+                            .work-name {
+                                color: #fff;
+                                font-size: $f-s-sm;
+                            }
+
+                            .work-mfg {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                color: #fff;
+                                font-size: $f-s-sm;
+
+                            }
+
+                        }
+
+                        .bg {
+                            position: absolute;
+                            left: -25%;
+                            top: -50%;
+                            width: 150%;
+                            height: 200%;
+                            background-color: #274346;
+                            border-radius: 100%;
+                            z-index: 97;
+                            transform: scale(0.1);
+                            /* 初始小一點 */
+                            transition: transform .5s ease;
+
+                        }
+
+                        &:hover {
+                            opacity: 1;
+                            transition: transform .5s ease;
+
+                            .bg {
+                                transform: scale(1);
+                            }
+
+
+                        }
+                    }
+
+                }
+            }
+
+            .pagination {
+                color: #274346;
+            }
+        }
+
+    }
+}

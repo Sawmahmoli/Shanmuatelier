@@ -1,0 +1,234 @@
+@use '../reset'; // @use須在任何其他規則之前寫入
+@use './color' as *;
+@use './font' as *;
+
+
+// * {
+//     outline: .5px solid red;
+// }
+
+// WRAP
+.wrap {
+    width: 100vw;
+
+
+    // NAVBAR
+    .navbar {
+        position: fixed;
+        z-index: 5;
+
+        button:focus {
+            outline: none;
+        }
+
+        // HAMBURGER
+        .hamburger {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 99;
+            margin: 48px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+
+            .bar {
+                display: flex;
+                width: 56px;
+                height: 1.5px;
+                background-color: $forest;
+                margin: 10px auto;
+                transition: 0.35s;
+
+                &:nth-child(2) {
+                    width: 48px;
+                    align-self: end;
+                }
+
+            }
+
+            &.is-active {
+                .bar {
+                    background-color: $cream;
+
+                    &:nth-child(1) {
+                        width: 48px;
+                        transform: rotate(30deg) translate(10px, 7px);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        width: 48px;
+                        transform: rotate(-30deg) translate(10px, -7px);
+                    }
+                }
+            }
+
+        }
+
+        // NAV
+        .menu {
+            // display: none;
+
+            opacity: 0;
+            transform: translateX(100%);
+
+            &.show {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                z-index: 5;
+                top: 0;
+                right: 0;
+                background-color: $sage;
+                gap: 30px;
+                width: 360px;
+                height: 100%;
+                padding: 120px 80px;
+
+                transform: translateX(0);
+                opacity: 1;
+                transition: transform 0.7s ease;
+
+
+                a {
+                    color: $cream;
+                    font-size: $f-s-md;
+                }
+            }
+        }
+    }
+
+    // RESERVATION
+    .reserve-btn {
+        border: none;
+        position: fixed;
+        z-index: 1;
+        bottom: 100px;
+        right: 0;
+        background-color: transparent;
+        border: 1px solid $sage;
+
+        .reservation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            padding: 40px 7px;
+            gap: 10px;
+
+            h2 {
+                font-family: $family-tc;
+                font-size: $f-s-sm;
+                font-weight: $f-w-r;
+                color: $sage;
+                writing-mode: vertical-rl;
+                text-align: center;
+                letter-spacing: 0.2rem;
+            }
+        }
+
+        :hover {
+            background-color: $sage;
+            transition: transform 0.7s ease;
+
+            h2 {
+                color: $cream;
+            }
+
+        }
+    }
+
+
+    // FOOTER
+    #footer {
+        color: $white;
+        background-color: $ash;
+        padding: 10% 0 0 10%;
+        position: relative;
+        z-index: 5;
+
+        .footer-wrap {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                top: 20%;
+
+                h4 {
+                    font-family: $family-display;
+                    font-size: $f-s-xxl;
+                }
+
+                p {
+                    font-family: $family-en;
+                    font-size: $f-s-md;
+
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 10%;
+
+                h5 {
+                    font-family: $family-tc;
+                    font-size: $f-s-lg;
+                    font-weight: $f-w-l;
+
+                }
+
+                p {
+                    font-family: $family-tc;
+                    font-size: $f-s-sm;
+                    font-weight: $f-w-l;
+                }
+
+
+
+                .add {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                .tel {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+            }
+
+        }
+
+        .copyright {
+            padding: 5% 0;
+
+            small {
+                font-family: $family-tc;
+                font-size: $f-s-xs;
+                font-weight: $f-w-l;
+            }
+        }
+
+        .top-btn {
+            border: none;
+            appearance: none;
+            background-color: transparent;
+            position: absolute;
+            top: 25%;
+            right: 10%;
+            height: 30%;
+            width: fit-content;
+            cursor: pointer;
+        }
+    }
+}

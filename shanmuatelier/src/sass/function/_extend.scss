@@ -1,0 +1,86 @@
+@use '../variables/' as *;
+@use './mixin' as *;
+// extend 不能調用整個 function資料夾，在此只調用 mixin檔案
+// extend語法在css會置頂
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+%img-cover {  // 直接設定在子元素上
+    object-fit: cover;
+    width: 100%; // <img> => reset 已設定
+    height: 100%;
+}
+
+%btn-animation {
+    border-radius: $radius-ex;
+    @extend %flex-center;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    margin: $spacing-md auto;
+    @include bordered;
+    color: $cream;
+    letter-spacing: $spacing-sm;
+    padding-left: $spacing-sm;
+
+    &:hover {
+        @include animation($name: rotate);
+
+        span {
+            @include animation($name: rotate);
+        }
+    }
+}
+
+%input-style {
+    // border: 1px solid var(--lesser-3);
+    @include bordered;
+    padding: $spacing-xs;
+    border-radius: $radius-sm;
+    color: $cream;
+    font-weight: $f-w-r;
+
+    &:focus {
+        outline: 2px solid $slate
+    }
+
+    &::placeholder {
+        color: $slate;
+        font-size: $f-s-xs;
+        font-weight: $f-w-m;
+    }
+}
+
+%multiple-line {
+    // 多行省略
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+%single-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+%list-title {
+    font-size: $f-s-lg;
+    font-weight: $f-w-m;
+    margin-bottom: $spacing-xs;
+}

@@ -1,0 +1,78 @@
+@use 'reset'; // @use須在任何其他規則之前寫入
+@use 'variables' as *;
+@use 'function' as *;
+
+
+// WORKDETAIL
+#work-detail {
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .detail-header {
+        font-family: $family-display;
+        padding: 10vh 15vw;
+    }
+
+    .detail-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        height: 100%;
+        position: relative;
+
+        .detail-img {
+            overflow: hidden;
+            width: 60%;
+
+            img {
+                object-fit: cover;
+                margin-top: 10px;
+            }
+        }
+
+        .text-box {
+            width: 35%;
+            height: 100%;
+            padding-right: 10vw;
+            margin-bottom: 15vh;
+            position: sticky;
+            top: 10vh;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .year {
+                font-family: $family-en;
+
+            }
+
+            .detail-specs {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                >h3 {
+                    font-family: $family-tc;
+                }
+
+                >li {
+                    font-family: $family-tc;
+                }
+            }
+
+            .detail-desc {
+                >h3 {
+                    font-family: $family-tc;
+                }
+            }
+        }
+
+        .back {
+            position: fixed;
+            bottom: 10vh;
+            right: 10vw;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@forward '../function/extend';
+@forward '../function/mixin';
+
+// 匯入檔案路徑需回到上一層資料夾，再重新讀入
+// 不能使用同一層 => 產生無限迴圈!
