@@ -37,9 +37,6 @@
 
         .block1 {
             grid-column: 4/5;
-
-            --base: 0;
-            --distance: -20vh;
         }
 
         .img3 {
@@ -95,26 +92,43 @@
             flex-direction: column;
             margin: 0 15vw;
 
+            >* {
+                max-width: 500px;
+            }
+
             .img1 {
                 width: 100%;
             }
 
             .block1 {
                 margin-top: 10vh;
+                width: 100%;
             }
 
             .img3 {
                 width: 100%;
+                max-width: 500px;
             }
 
             .img2 {
+                margin-top: 10vh;
                 width: 100%;
             }
-            .iframe{
+
+            .iframe {
                 margin-top: 10vh;
             }
-            .block2{
+
+            .block2 {
                 margin-top: 10vh;
+                width: 100%;
+            }
+
+            .block3 {
+                margin-top: 10vh;
+                width: 100%;
+                max-width: 500px;
+
             }
         }
 
